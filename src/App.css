@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;700&display=swap');
 :root{
   --primary:#080617;
+  --primary-dark:#130f33;
   --secondary:#7887AC;
-  --primary-dark:#1B0140;
-
+  --green-strong:#05F2DB;
 }
 html{
   box-sizing: border-box;
@@ -16,6 +16,32 @@ html{
 }
 body{
   font-family: 'Readex Pro', sans-serif;
-  background: var(--primary);
+  background: linear-gradient(var(--primary),var(--primary-dark));
   color: var(--secondary);
+  font-weight: 300;
+}
+h1{
+  color: var(--green-strong);
+  font-weight: 400;
+  font-size: 6rem;
+}
+h2{
+  color: var(--primary);
+  -webkit-text-stroke: 0.1rem var(--secondary);
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+h3{
+  margin-bottom: 1rem;
+}
+p{
+  font-size: 1.3rem;
+}
+.App{
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+section{
+  padding: 5rem 0;
 }
