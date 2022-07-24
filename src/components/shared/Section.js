@@ -1,6 +1,6 @@
-function Section({children}) {
+function Section({children, id}) {
     return ( 
-        <section>
+        <section id={id}>
             {children}
         </section>
      );

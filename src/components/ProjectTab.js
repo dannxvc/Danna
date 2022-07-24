@@ -5,7 +5,7 @@ import {default as ProjectPortfolio} from '../img/portfolio.png';
 import {default as ProjectGoodsleep} from '../img/goodsleep.png';
 function ProjectTab() {
 
-    const [projectActive,setProjectActive] = useState("personal");
+    const [projectactive,setProjectActive] = useState("personal");
     const  personal= [
         {
             title:"Danna Portfolio",
@@ -42,11 +42,11 @@ function ProjectTab() {
         <div className="project">
             <div className="project-btns">
                 {Object.keys(projectItems).map((projectType)=>(
-                    <button key={projectType} className={`project-btn ${projectActive === projectType&&"project-btn-active"}`} projectActive={projectActive === projectType}  onClick={() => setProjectActive(projectType)}>{projectType}</button>
+                    <button key={projectType} className={`project-btn ${projectactive === projectType && "project-btn-active"}`} projectactive={projectactive === projectType}  onClick={() => setProjectActive(projectType)}>{projectType}</button>
                 ))}
             </div>
             <div className="project-box">
-                {projectItems[projectActive].map((projectCha)=>(
+                {projectItems[projectactive].map((projectCha)=>(
                     <ProjectCard
                         key={projectCha.title}
                         title={projectCha.title}

@@ -8,6 +8,10 @@
     margin-right: 0.3rem;
     font-size: 1.3rem;
     font-weight: 300;
+    cursor: pointer;
+}
+.project-btn:hover{
+    background-color: var(--primary);
 }
 .project-btn-active{
     border-bottom: 0.2rem solid var(--green-strong);

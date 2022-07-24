@@ -1,0 +1,14 @@
+.navBar{
+    position: fixed;
+    bottom: 10rem;
+    right: 10rem;
+    z-index: 2;
+}
+.navBar ul{
+    list-style: none;
+    font-size: 1.2rem;
+}
+.link-nav{
+    text-decoration: none;
+    color: var(--green-strong);  
+}

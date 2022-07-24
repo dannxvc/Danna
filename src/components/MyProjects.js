@@ -3,7 +3,7 @@ import Section from "./shared/Section";
 import "../css/Projects.css";
 function MyProjects() {
     return (  
-        <Section>
+        <Section  id="my-projects">
             <h2>my projects .</h2>
             <ProjectTab/> 
         </Section>

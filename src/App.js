@@ -1,19 +1,12 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 import AboutMe from './components/AboutMe';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Intro from './components/Intro';
-import MyProjects from './components/MyProjects';
-
 function App() {
   return (
-    <div className="App">
-      <Intro/>
-      <AboutMe/>
-      <MyProjects/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <Routes>
+        <Route path="/" element={<Layout />} />
+    </Routes>
   );
 }
 

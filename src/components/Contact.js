@@ -2,7 +2,7 @@ import Section from "./shared/Section";
 import "../css/Contact.css";
 function Contact() {
     return ( 
-        <Section>
+        <Section id="contact">
             <h2>contact .</h2>
             <div className="contact-content">
                 <div>

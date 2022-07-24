@@ -30,7 +30,7 @@ function AboutMe() {
         }
     };
     return ( 
-        <Section>
+        <Section id="about-me">
             <h2>about me .</h2>
             <p className="aboutme-description">I am a fourth year <strong>software development student</strong> at the technological university of Peru. I am also a self-taught person. I have great interest in <strong>frontend</strong> and <strong>backend</strong> development.</p>
             <h3>Technologies I’ve been working with:</h3>
