@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;700&display=swap');
 :root{
   --primary:#080617;
+  --primary-light:#100C28;
   --primary-dark:#130f33;
   --secondary:#7887AC;
   --green-strong:#05F2DB;

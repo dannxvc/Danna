@@ -1,0 +1,50 @@
+.project-btn{
+    background-color: var(--primary-light);
+    padding: 1rem;
+    width: 10rem;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+    border: 0.1rem solid transparent;
+    margin-right: 0.3rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+.project-btn-active{
+    border-bottom: 0.2rem solid var(--green-strong);
+}
+.project-box{
+    display: grid;
+    width: 62rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.project-card{
+    height: 28rem;
+    width: 20rem;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--primary);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.project-img{
+    position: absolute;
+    top: 0;
+    left: -50%;
+    height: 28rem;
+    width: auto;
+    opacity: 0.1;
+}
+.project-techs{
+    color: var(--green-strong);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.project-description{
+    font-size: 0.93rem;
+}
