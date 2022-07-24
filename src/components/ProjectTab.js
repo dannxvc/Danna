@@ -10,7 +10,7 @@ function ProjectTab() {
         {
             title:"Danna Portfolio",
             techs:"html5/css/React.js",
-            description:"My personal portfolo developed with React.js from scratch and bootstrapped with Create React App",
+            description:"My personal portfolio developed with React.js from scratch and bootstrapped with Create React App",
             img:<img className="project-img" src={ProjectPortfolio} alt="Bookmark"/>
         },
         {

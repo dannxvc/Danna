@@ -1,0 +1,25 @@
+.contact-content{
+    display: flex;
+    background-color: var(--primary-light);
+    border-radius: 1rem;
+    padding: 5rem;
+    align-items: center;
+}
+.contact-icons{
+    display: grid;
+    gap: 1rem;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+}
+.icon-contact{
+    width: 3.125rem;
+    height: auto;
+    margin: 0 auto;
+}
+.icon-contact:hover{
+    --icon:var(--green-strong) ;
+}
+.user{
+    color: var(--green-strong);
+}
