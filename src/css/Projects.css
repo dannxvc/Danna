@@ -48,3 +48,19 @@
 .project-description{
     font-size: 0.93rem;
 }
+.project-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    z-index: 1;
+}
+
+.icon-project{
+    width: 2.1875rem;
+    height: auto;
+    margin: 0 auto;
+}
+.icon-project:hover{
+    --icon:var(--green-strong) ;
+}
