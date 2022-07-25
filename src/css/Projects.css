@@ -31,10 +31,9 @@
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: end;
     align-items: center;
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 13rem 2rem 3rem 2rem;
 }
 .project-img{
     position: absolute;
