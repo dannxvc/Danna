@@ -1,5 +1,4 @@
-import "../css/NavBar.css";
-function NavBar() {
+function NavBar({classNav}) {
     const navItems = [
         "#intro",
         "#about-me",
@@ -7,7 +6,7 @@ function NavBar() {
         "#contact",
     ];
     return ( 
-        <nav className="navBar">
+        <nav className={classNav}>
             <ul>
                 {navItems.map((links,i)=>
                     <li key={i}>

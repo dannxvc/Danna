@@ -8,3 +8,26 @@
     width: 100%;
     max-width: 40rem;
 }
+.hamburguer{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    content: url(../img/hamburguer.svg);
+    display: flex;
+    width: 1.5rem;
+    height: auto;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 3;
+}
+.hamburguer.open{
+    z-index: 2;
+    content: url(../img/close.svg);
+    display: flex;
+}
+@media only screen and (min-width:75rem) {
+    .hamburguer{
+        display: none;
+    }
+}

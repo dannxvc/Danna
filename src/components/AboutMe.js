@@ -4,6 +4,7 @@ import {ReactComponent as TechCSS} from '../img/css.svg';
 import {ReactComponent as TechJS} from '../img/js.svg';
 import {ReactComponent as TechREACT} from '../img/react.svg';
 import {ReactComponent as TechGIT} from '../img/git.svg';
+import {ReactComponent as TechSQL} from '../img/sql.svg';
 import "../css/AboutMe.css";
 
 function AboutMe() {
@@ -18,7 +19,7 @@ function AboutMe() {
         },
         js:{
             img:<TechJS className="tech-icon"/>,
-            tech: "JavaScript"
+            tech: "JavaScript ES6+"
         },
         react:{
             img:<TechREACT className="tech-icon"/>,
@@ -27,6 +28,10 @@ function AboutMe() {
         git:{
             img:<TechGIT className="tech-icon"/>,
             tech: "Git"
+        },
+        sql:{
+            img:<TechSQL className="tech-icon"/>,
+            tech: "SQL"
         }
     };
     return ( 

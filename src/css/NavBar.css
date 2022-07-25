@@ -1,14 +1,40 @@
 .navBar{
     position: fixed;
-    bottom: 10rem;
-    right: 10rem;
-    z-index: 2;
+    bottom: auto;
+    right: auto;
+    top:0;
+    left: 0;
+    padding: 1rem 1rem 1rem 3rem;
+    z-index: 1;
+    display: none;
+    background:var(--primary-dark);
+    width: 100%;
+}
+.navBar.open{
+    display: block;
 }
 .navBar ul{
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .link-nav{
     text-decoration: none;
     color: var(--green-strong);  
+}
+@media only screen and (min-width:75rem) {
+    .navBar{
+        display: block;
+        padding: 0;
+        bottom: 10rem;
+        right: 10rem;
+        top: auto;
+        left: auto;
+        z-index: 3;
+        background:transparent;
+        width: auto;
+    }
+    .navBar ul{
+        list-style: none;
+        font-size: 1.2rem;
+    }
 }

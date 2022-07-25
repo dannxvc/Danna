@@ -1,25 +1,40 @@
 .contact-content{
     display: flex;
+    flex-direction: column;
     background-color: var(--primary-light);
     border-radius: 1rem;
-    padding: 5rem;
-    align-items: center;
+    padding: 2rem;
 }
 .contact-icons{
     display: grid;
     gap: 1rem;
-    width: 60%;
+    width: 100%;
     align-items: center;
     text-align: center;
+    grid-auto-flow:column;
 }
 .icon-contact{
-    width: 3.125rem;
+    width: 2rem;
     height: auto;
-    margin: 0 auto;
+    margin: 1rem auto 0 auto;
 }
 .icon-contact:hover{
     --icon:var(--green-strong) ;
 }
 .user{
     color: var(--green-strong);
+}
+@media only screen and (min-width:30rem) {
+    .contact-content{
+        flex-direction: row;
+        align-items: center; 
+        padding: 5rem;       
+    }
+    .contact-icons{
+        width: 60%;
+        grid-auto-flow:row;
+    }
+    .icon-contact{
+        width: 3.125rem;
+    }
 }

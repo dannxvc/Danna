@@ -39,7 +39,12 @@ function ProjectTab() {
         <div className="project">
             <div className="project-btns">
                 {Object.keys(projectItems).map((projectType)=>(
-                    <button key={projectType} className={`project-btn ${projectactive === projectType && "project-btn-active"}`} projectactive={projectactive === projectType}  onClick={() => setProjectActive(projectType)}>{projectType}</button>
+                    <button key={projectType}
+                        className={`project-btn ${projectactive === projectType && "project-btn-active"}`} 
+                        projectactive={projectactive === projectType}  
+                        onClick={() => setProjectActive(projectType)}>
+                            {projectType}
+                    </button>
                 ))}
             </div>
             <div className="project-box">

@@ -1,3 +1,7 @@
+.project-btns{
+    display: flex;
+    
+}
 .project-btn{
     background-color: var(--primary-light);
     padding: 1rem;
@@ -18,13 +22,13 @@
 }
 .project-box{
     display: grid;
-    width: 62rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    grid-template-columns: 1fr;
     gap: 1rem;
 }
 .project-card{
     height: 28rem;
-    width: 20rem;
+    width: 100%;
     overflow: hidden;
     position: relative;
     background-color: var(--primary);
@@ -38,8 +42,8 @@
 .project-img{
     position: absolute;
     top: 0;
-    left: -50%;
-    height: 28rem;
+    left: auto;
+    height: auto;
     width: auto;
     opacity: 0.1;
 }
@@ -58,7 +62,6 @@
     margin-top: 1.5rem;
     z-index: 1;
 }
-
 .icon-project{
     width: 2.1875rem;
     height: auto;
@@ -66,4 +69,23 @@
 }
 .icon-project:hover{
     --icon:var(--green-strong) ;
+}
+@media only screen and (min-width:55rem) {
+    .project-box{
+        width: 42rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .project-card{
+        width: 20rem;
+    }
+    .project-img{
+        height: 28rem;
+        left: -50%;        
+    }
+}
+@media only screen and (min-width:80rem) {
+    .project-box{
+        width: 62rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
