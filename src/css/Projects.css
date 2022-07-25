@@ -37,7 +37,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border: solid 0.05rem transparent;
     padding: 13rem 2rem 3rem 2rem;
+}
+.project-card:hover{
+    border: solid 0.05rem var(--secondary);
+    background-color: var(--primary-light);
 }
 .project-img{
     position: absolute;

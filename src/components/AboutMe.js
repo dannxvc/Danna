@@ -5,6 +5,7 @@ import {ReactComponent as TechJS} from '../img/js.svg';
 import {ReactComponent as TechREACT} from '../img/react.svg';
 import {ReactComponent as TechGIT} from '../img/git.svg';
 import {ReactComponent as TechSQL} from '../img/sql.svg';
+import {ReactComponent as TechJAVA} from '../img/java.svg';
 import "../css/AboutMe.css";
 
 function AboutMe() {
@@ -32,12 +33,17 @@ function AboutMe() {
         sql:{
             img:<TechSQL className="tech-icon"/>,
             tech: "SQL"
+        },
+        java:{
+            img:<TechJAVA className="tech-icon"/>,
+            tech: "Java"
         }
     };
     return ( 
         <Section id="about-me">
             <h2>about me .</h2>
             <p className="aboutme-description">I am a fourth year <strong>software development student</strong> at the technological university of Peru. I am also a self-taught person. I have great interest in <strong>frontend</strong> and <strong>backend</strong> development.</p>
+            <p className="aboutme-description">I enjoy learning from platforms that help me improving my skills, like FreeCodeCamp, Academia X and TheOdinProject.</p>
             <h3>Technologies I’ve been working with:</h3>
             
             <ul>

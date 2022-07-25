@@ -19,12 +19,32 @@
     position: fixed;
     top: 2rem;
     right: 2rem;
-    z-index: 3;
+    z-index: 4;
 }
 .hamburguer.open{
     z-index: 2;
     content: url(../img/close.svg);
     display: flex;
+    z-index: 4;
+}
+.title{
+    display: flex;
+    align-items: center;
+    height: 6rem;
+}
+.typed-cursor{
+    color: var(--green-strong);
+    font-size: 4rem;
+    margin-bottom: 1.4rem;
+}
+@media only screen and (min-width:30rem) {
+    .title{
+        height: 10rem;
+    }
+    .typed-cursor{
+        font-size: 5.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
 @media only screen and (min-width:75rem) {
     .hamburguer{
