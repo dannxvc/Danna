@@ -39,10 +39,12 @@
     text-align: center;
     border: solid 0.05rem transparent;
     padding: 13rem 2rem 3rem 2rem;
+    transition: transform .5s ease;
 }
 .project-card:hover{
     border: solid 0.05rem var(--secondary);
     background-color: var(--primary-light);
+    transform: translateY(-0.3rem);
 }
 .project-img{
     position: absolute;
@@ -71,9 +73,11 @@
     width: 2.1875rem;
     height: auto;
     margin: 0 auto;
+    transition: transform .5s ease;
 }
 .icon-project:hover{
-    --icon:var(--green-strong) ;
+    --icon:var(--green-strong);
+    transform: translateY(-0.3rem);
 }
 @media only screen and (min-width:55rem) {
     .project-box{

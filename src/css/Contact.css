@@ -17,9 +17,11 @@
     width: 2rem;
     height: auto;
     margin: 1rem auto 0 auto;
+    transition: transform .5s ease;
 }
 .icon-contact:hover{
     --icon:var(--green-strong) ;
+    transform: translateY(-0.3rem);
 }
 .user{
     color: var(--green-strong);

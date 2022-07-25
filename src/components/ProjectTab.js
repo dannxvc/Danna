@@ -13,8 +13,8 @@ function ProjectTab() {
                 techs:"html5/css/React.js",
                 description:"My personal portfolio developed with React.js from scratch and bootstrapped with Create React App.",
                 img:<img className="project-img" src={ProjectPortfolio} alt="Bookmark"/>,
-                linkGitRepo:"https://github.com/dannxvc/danna-portfolio",
-                linkLiveSite:"https://bookmark-pg-react.pages.dev/"
+                linkGitRepo:"https://github.com/dannxvc/danna",
+                linkLiveSite:"https://danna.pages.dev/"
             },
             {
                 title:"Bookmark Manager",
