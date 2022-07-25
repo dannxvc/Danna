@@ -9,13 +9,12 @@ function Intro() {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-          strings: ["Hi! I'm", "Danna."],         startDelay: 300,
+          strings: ["Hi! I'm", "Danna."],         
+          startDelay: 300,
           typeSpeed: 80,
           backSpeed: 100,
           backDelay: 100
         });
-    
-        // Destropying
         return () => {
           typed.destroy();
         };
@@ -25,7 +24,7 @@ function Intro() {
         <header className="header" id="intro">
             <p className="intro-greet">Hi! I'm</p> 
             <div className="title">
-                <h1 ref={el}>Danna.</h1>
+                <h1 ref={el}></h1>
             </div>
             <p className="intro-description">
                 I am a very passionate software engineering student. I have great interest in frontend and backend development.
