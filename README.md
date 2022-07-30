@@ -42,5 +42,5 @@
 - Portfolio - [@dannxvc](https://danna.pages.dev/)
 - Instagram - [@dannxvc](https://www.instagram.com/dannxvc/)
 - LinkedIn - [@dannxvc](https://www.linkedin.com/in/dannxvc/)
-- Frontend Mentor - [@dannxvc](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@dannxvc](https://www.frontendmentor.io/profile/dannxvc)
 

@@ -43,7 +43,8 @@ function AboutMe() {
         <Section id="about-me">
             <h2>about me .</h2>
             <p className="aboutme-description">I am a fourth year <strong>software development student</strong> at the technological university of Peru. I am also a self-taught person. I have great interest in <strong>frontend</strong> and <strong>backend</strong> development.</p>
-            <p className="aboutme-description">I enjoy learning from platforms that help me improving my skills, like FreeCodeCamp, Academia X and TheOdinProject.</p>
+            <p className="aboutme-description"> I am very interested in creating stuff, related to technology and art. I enjoy learning from platforms that help me improving my skills, like FreeCodeCamp, Academia X and TheOdinProject.
+            </p>
             <h3>Technologies I’ve been working with:</h3>
             
             <ul>
