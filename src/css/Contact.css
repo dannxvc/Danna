@@ -17,6 +17,7 @@
     width: 2rem;
     height: auto;
     margin: 1rem auto 0 auto;
+    animation: socialIcons 2s ease-in-out infinite;
     transition: transform .5s ease;
 }
 .icon-contact:hover{
@@ -25,6 +26,17 @@
 }
 .user{
     color: var(--green-strong);
+}
+@keyframes socialIcons{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0.5rem);
+    }
+    0% {
+        transform: translateY(0);
+      }
 }
 @media only screen and (min-width:30rem) {
     .contact-content{

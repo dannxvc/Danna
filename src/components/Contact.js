@@ -1,11 +1,23 @@
 import Section from "./shared/Section";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import "../css/Contact.css";
 function Contact() {
+    const ref=useRef(null);
+    const isInView = useInView(ref, { once: true});
+    const styleDes = {
+        transform: isInView ? "none" : "translateY(100px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+      };
     return ( 
         <Section id="contact">
             <h2>contact .</h2>
             <div className="contact-content">
-                <div>
+                <div  
+                    ref={ref}
+                    style={styleDes}
+                >
                     <h3 className="user">@dannxvc</h3>
                     <p>Feel free to leave a message in any of my socials.</p>
                 </div>

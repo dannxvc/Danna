@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
 :root{
   --primary:#080617;
   --primary-light:#100C28;
   --primary-dark:#0a091a;
-  --secondary:#7887AC;
-  --secondary-light:#9BA8C9;
+  --secondary:rgb(182, 191, 243);
+  --secondary-light:rgb(198, 204, 240);
+  /* --secondary-light:#9BA8C9; */
   --green-strong:#05F2DB;
+  --green-strong-transparent:rgb(5, 242, 219,0.2);
   --icon:var(--secondary);
 }
 html{
@@ -19,7 +22,8 @@ html{
   transition: .3s ease-in-out;
 }
 body{
-  font-family: 'Readex Pro', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Readex Pro', sans-serif; */
   background: linear-gradient(var(--primary),var(--primary-dark));
   color: var(--secondary);
   font-weight: 300;

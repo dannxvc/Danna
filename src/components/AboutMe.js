@@ -7,8 +7,17 @@ import {ReactComponent as TechGIT} from '../img/git.svg';
 import {ReactComponent as TechSQL} from '../img/sql.svg';
 import {ReactComponent as TechJAVA} from '../img/java.svg';
 import "../css/AboutMe.css";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 function AboutMe() {
+    const ref=useRef(null);
+    const isInView = useInView(ref, { once: true});
+    const styleDes = {
+        transform: isInView ? "none" : "translateY(100px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+      };
     const technologiesItems ={
         htm5:{
             img:<TechHTML className="tech-icon"/>,
@@ -42,14 +51,25 @@ function AboutMe() {
     return ( 
         <Section id="about-me">
             <h2>about me .</h2>
-            <p className="aboutme-description">I am a fourth year <strong>software development student</strong> at the technological university of Peru. I am also a self-taught person. I have great interest in <strong>frontend</strong> and <strong>backend</strong> development.</p>
-            <p className="aboutme-description"> I am very interested in creating stuff, related to technology and art. I enjoy learning from platforms that help me improving my skills, like FreeCodeCamp, Academia X and TheOdinProject.
+            <p 
+                className="aboutme-description"
+                ref={ref}
+                style={styleDes}
+            >I am a fourth year <strong>software development student</strong> at the technological university of Peru. I am also a self-taught person. I have great interest in <strong>frontend</strong> and <strong>backend</strong> development.</p>
+            <p 
+                className="aboutme-description"
+                ref={ref}
+                style={styleDes}
+            > I am very interested in creating stuff, related to technology and art. I enjoy learning from platforms that help me improving my skills, like FreeCodeCamp, Academia X and TheOdinProject.
             </p>
             <h3>Technologies I’ve been working with:</h3>
             
             <ul>
                 {Object.keys(technologiesItems).map((tech)=>(
-                    <li className="tech-list" key={tech}>
+                    <li 
+                        className="tech-list" 
+                        key={technologiesItems[tech]["tech"]}
+                    >
                         {technologiesItems[tech]["img"]}
                         {technologiesItems[tech]["tech"]}
                     </li>

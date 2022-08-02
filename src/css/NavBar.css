@@ -11,7 +11,9 @@
     width: 100%;
 }
 .navBar.open{
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 .navBar ul{
     list-style: none;
@@ -21,9 +23,23 @@
     text-decoration: none;
     color: var(--green-strong);  
 }
+.nav-icons{
+    display: flex;
+    flex-direction: column;
+}
+.icon-nav{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 0.5rem 0 0;
+    --icon:var(--green-strong);
+}
+.icon-nav:hover{
+    --icon:var(--secondary);
+}
 @media only screen and (min-width:75rem) {
     .navBar{
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding: 0;
         bottom: 10rem;
         right: 10rem;
@@ -35,5 +51,13 @@
     .navBar ul{
         list-style: none;
         font-size: 1.2rem;
+    }
+    .nav-icons{
+        flex-direction: row;
+    }
+    .icon-nav{
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 0.5rem 0.5rem 0 0;
     }
 }

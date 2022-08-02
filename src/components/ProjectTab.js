@@ -19,7 +19,7 @@ function ProjectTab() {
             {
                 title:"Bookmark Manager",
                 techs:"html5/css/React.js",
-                description:"A frontendmentor challenge. Website developed with React.js from scratch.",
+                description:"A frontendmentor challenge. A landing bookmark page developed with React.js from scratch.",
                 img:<img className="project-img" src={ProjectBookmark} alt="Bookmark"/>,
                 linkGitRepo:"https://github.com/dannxvc/bookmark-pg-react",
                 linkLiveSite:"https://bookmark-pg-react.pages.dev/"

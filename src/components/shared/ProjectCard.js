@@ -1,9 +1,43 @@
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 function ProjectCard({title,techs,description,img,linkGitRepo,linkLiveSite}) {
+    const ref=useRef(null);
+    const isInView = useInView(ref, { once: true});
+    const style = {
+        transform: isInView ? "none" : "translateY(100px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s"
+      };
+    const styleDes = {
+        transform: isInView ? "none" : "translateY(100px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+      };
+
     return (  
-        <div className="project-card">
-            <h3>{title}</h3>
-            <p className="project-techs">{techs}</p>
-            <span className="project-description">{description}</span>
+        <div 
+            className="project-card"
+            ref={ref}
+            style={style}    
+        >
+            <h3
+            ref={ref}
+            style={styleDes}
+            >{title}</h3>
+            <p 
+                className="project-techs"
+                ref={ref}
+                style={styleDes}
+            >
+                {techs}
+            </p>
+            <span 
+                className="project-description"
+                ref={ref}
+                style={styleDes}    
+            >
+                {description}
+            </span>
             {img}
             <div className="project-links">
                 <a href={linkGitRepo}>
