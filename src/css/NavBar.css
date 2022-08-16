@@ -6,7 +6,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    padding: 1rem 1rem 1rem 3rem;
+    padding: 1rem;
     z-index: 3;
     display: none;
     background:var(--primary-transparent);
@@ -55,7 +55,7 @@
         left: auto;
         background:transparent;
         width: auto;
-        justify-content: initial;
+        justify-content: left;
         text-align: left;
     }
     .navBar ul{

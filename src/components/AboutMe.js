@@ -14,10 +14,10 @@ function AboutMe() {
     const ref=useRef(null);
     const isInView = useInView(ref, { once: true});
     const styleDes = {
-        transform: isInView ? "none" : "translateY(100px)",
+        transform: isInView ? "none" : "translateY(60px)",
         opacity: isInView ? 1 : 0,
-        transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-      };
+        transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
+    };
     const technologiesItems ={
         htm5:{
             img:<TechHTML className="tech-icon"/>,
@@ -69,6 +69,8 @@ function AboutMe() {
                     <li 
                         className="tech-list" 
                         key={technologiesItems[tech]["tech"]}
+                        ref={ref}
+                        style={styleDes}
                     >
                         {technologiesItems[tech]["img"]}
                         {technologiesItems[tech]["tech"]}

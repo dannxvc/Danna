@@ -5,11 +5,11 @@
   --primary-light:#100C28;
   --primary-dark:#0a091a;
   --primary-transparent:rgba(10, 9, 26,.35);
-  --secondary:rgb(182, 191, 243);
+  --secondary:#b6bff3;
   --secondary-light:rgb(198, 204, 240);
-  /* --secondary-light:#9BA8C9; */
   --green-strong:#05F2DB;
   --green-strong-transparent:rgb(5, 242, 219,0.2);
+  --pink:#ca9ed5;
   --icon:var(--secondary);
 }
 html{
@@ -27,6 +27,7 @@ body{
   background: linear-gradient(var(--primary),var(--primary-dark));
   color: var(--secondary);
   font-weight: 300;
+  position: relative;
 }
 h1{
   color: var(--green-strong);
@@ -51,7 +52,24 @@ p{
   margin: 0 auto;
 }
 section{
-  padding: 8rem 0;
+  padding:0;
+  padding-top: 6rem;
+}
+
+@-webkit-keyframes LinearGradientBg {
+  0%{background-position:25% 0%}
+  50%{background-position:76% 100%}
+  100%{background-position:25% 0%}
+}
+@-moz-keyframes LinearGradientBg {
+  0%{background-position:25% 0%}
+  50%{background-position:76% 100%}
+  100%{background-position:25% 0%}
+}
+@keyframes LinearGradientBg {
+  0%{background-position:25% 0%}
+  50%{background-position:76% 100%}
+  100%{background-position:25% 0%}
 }
 @media only screen and (min-width:30rem) {
     h1{
@@ -62,5 +80,8 @@ section{
     }
     p{
       font-size: 1.3rem;
+    }
+    section{
+      padding: 8rem 0;
     }
 }

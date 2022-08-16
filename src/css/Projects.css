@@ -31,7 +31,12 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: var(--primary);
+    background: linear-gradient(313deg, rgba(184, 93, 207,.5), rgba(117, 181, 218,.5));
+    background-size: 400% 400%;
+
+    -webkit-animation: LinearGradientBg 3s ease infinite;
+    -moz-animation: LinearGradientBg 3s ease infinite;
+    animation: LinearGradientBg 3s ease infinite;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
