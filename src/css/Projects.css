@@ -3,19 +3,19 @@
     
 }
 .project-btn{
-    background-color: var(--primary-light);
+    background-color:var(--blue-transparent);
     padding: 1rem;
     width: 10rem;
     margin-bottom: 2rem;
     color: var(--secondary);
-    border: 0.1rem solid transparent;
+    border: 0.2rem solid transparent;
     margin-right: 0.3rem;
     font-size: 1.3rem;
     font-weight: 300;
     cursor: pointer;
 }
 .project-btn:hover{
-    background-color: var(--primary);
+    background-color: var(--transparent);
 }
 .project-btn-active{
     border-bottom: 0.2rem solid var(--green-strong);
@@ -31,12 +31,9 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(313deg, rgba(184, 93, 207,.5), rgba(117, 181, 218,.5));
-    background-size: 400% 400%;
-
-    -webkit-animation: LinearGradientBg 3s ease infinite;
-    -moz-animation: LinearGradientBg 3s ease infinite;
-    animation: LinearGradientBg 3s ease infinite;
+    /* background-color: var(--primary); */
+    background: 
+    linear-gradient(150deg, var(--blue), rgba(0,0,0,0) 20%);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -45,9 +42,6 @@
     border: solid 0.05rem var(--secondary);
     padding: 13rem 2rem 3rem 2rem;
     transition: transform .5s ease;
-}
-.project-card:hover{
-    box-shadow: 0px 1px 20px 1px var(--green-strong-transparent);
 }
 .project-img{
     position: absolute;

@@ -3,7 +3,6 @@ import { useState, useEffect, useRef  } from "react";
 import "../css/Intro.css";
 import NavBar from "./NavBar";
 import "../css/NavBar.css";
-import {default as Background} from '../img/bg.png';
 
 function Intro() {
     const el = useRef(null);
@@ -24,7 +23,6 @@ function Intro() {
 
     return ( 
         <header className="header" id="intro">
-            <img className="img-bg" src={Background}/>
             <p className="intro-greet">Hi! I'm</p> 
             <div className="title">
                 <h1 ref={el}></h1>

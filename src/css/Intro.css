@@ -1,9 +1,8 @@
 .header{
     display: flex;
     flex-direction: column;
-    height: 50vh;
     justify-content: center;
-    
+    height: 100vh;
 }
 .intro-description{
     width: 100%;
@@ -32,20 +31,15 @@
     display: flex;
     align-items: center;
     height: 6rem;
+    text-shadow: 0px 1px 20px var(--green-strong);
+
 }
 .typed-cursor{
     color: var(--green-strong);
     font-size: 4rem;
     margin-bottom: 1.4rem;
 }
-.img-bg{
-    position: absolute;
-    z-index: -2;
-    top: 0;
-    right: 0;
-    width: 300%;
-    object-fit:cover;
-}
+
 @media only screen and (min-width:30rem) {
     .title{
         height: 10rem;
@@ -54,20 +48,10 @@
         font-size: 5.5rem;
         margin-bottom: 1.5rem;
     }
-    .header{
-        height: 100vh;
-    }
-    
-    .img-bg{
-        width: 200%;
-    }
     
 }
 @media only screen and (min-width:75rem) {
     .hamburguer{
         display: none;
-    }
-    .img-bg{
-        width: 100%;
     }
 }

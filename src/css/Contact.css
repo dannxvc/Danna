@@ -1,7 +1,8 @@
 .contact-content{
     display: flex;
     flex-direction: column;
-    background-color: var(--primary-light);
+    /* background-color: var(--primary-light); */
+    border: 0.1rem solid var(--secondary);
     border-radius: 1rem;
     padding: 2rem;
 }

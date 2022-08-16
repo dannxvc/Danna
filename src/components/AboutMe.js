@@ -16,7 +16,7 @@ function AboutMe() {
     const styleDes = {
         transform: isInView ? "none" : "translateY(60px)",
         opacity: isInView ? 1 : 0,
-        transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
+        transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s"
     };
     const technologiesItems ={
         htm5:{
@@ -53,13 +53,9 @@ function AboutMe() {
             <h2>about me .</h2>
             <p 
                 className="aboutme-description"
-                ref={ref}
-                style={styleDes}
             >I am a fourth year <strong>software development student</strong> at the technological university of Peru. I am also a self-taught person. I have great interest in <strong>frontend</strong> and <strong>backend</strong> development.</p>
             <p 
                 className="aboutme-description"
-                ref={ref}
-                style={styleDes}
             > I am very interested in creating stuff, related to technology and art. I enjoy learning from platforms that help me improving my skills, like FreeCodeCamp, Academia X and TheOdinProject.
             </p>
             <h3>Technologies I’ve been working with:</h3>

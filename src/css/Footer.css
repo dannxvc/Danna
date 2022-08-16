@@ -1,6 +1,7 @@
 .footer{
     text-align: center;
-    padding: 4rem;
+    padding: 0;
+    padding-bottom: 2rem;
 }
 .footer-attribution{
     font-size: 1rem;

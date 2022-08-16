@@ -9,7 +9,8 @@
   --secondary-light:rgb(198, 204, 240);
   --green-strong:#05F2DB;
   --green-strong-transparent:rgb(5, 242, 219,0.2);
-  --pink:#ca9ed5;
+  --blue:#282f99;
+  --blue-transparent:rgba(40, 47, 153,.5);
   --icon:var(--secondary);
 }
 html{
@@ -24,7 +25,9 @@ html{
 }
 body{
   font-family: 'Nunito', sans-serif;
-  background: linear-gradient(var(--primary),var(--primary-dark));
+  background:
+  radial-gradient( var(--blue), var(--primary));
+
   color: var(--secondary);
   font-weight: 300;
   position: relative;
@@ -39,6 +42,8 @@ h2{
   -webkit-text-stroke: 0.1rem var(--secondary-light);
   font-size: 3rem;
   margin-bottom: 3rem;
+  text-shadow: 0px 1px 20px var(--secondary-light);
+
 }
 h3{
   margin-bottom: 1rem;
@@ -52,25 +57,9 @@ p{
   margin: 0 auto;
 }
 section{
-  padding:0;
-  padding-top: 6rem;
+  padding: 6rem 0;
 }
 
-@-webkit-keyframes LinearGradientBg {
-  0%{background-position:25% 0%}
-  50%{background-position:76% 100%}
-  100%{background-position:25% 0%}
-}
-@-moz-keyframes LinearGradientBg {
-  0%{background-position:25% 0%}
-  50%{background-position:76% 100%}
-  100%{background-position:25% 0%}
-}
-@keyframes LinearGradientBg {
-  0%{background-position:25% 0%}
-  50%{background-position:76% 100%}
-  100%{background-position:25% 0%}
-}
 @media only screen and (min-width:30rem) {
     h1{
       font-size: 6rem;
