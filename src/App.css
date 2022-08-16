@@ -4,6 +4,7 @@
   --primary:#080617;
   --primary-light:#100C28;
   --primary-dark:#0a091a;
+  --primary-transparent:rgba(10, 9, 26,.35);
   --secondary:rgb(182, 191, 243);
   --secondary-light:rgb(198, 204, 240);
   /* --secondary-light:#9BA8C9; */
@@ -23,7 +24,6 @@ html{
 }
 body{
   font-family: 'Nunito', sans-serif;
-  /* font-family: 'Readex Pro', sans-serif; */
   background: linear-gradient(var(--primary),var(--primary-dark));
   color: var(--secondary);
   font-weight: 300;

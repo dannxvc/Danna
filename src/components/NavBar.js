@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-function NavBar({classNav}) {
+function NavBar({classNav, onLinkClick}) {
     const ref=useRef(null);
     const isInView = useInView(ref, { once: true});
     const style = {
@@ -23,7 +23,7 @@ function NavBar({classNav}) {
             <ul>
                 {navItems.map((links,i)=>
                     <li key={i}>
-                        <a className="link-nav" href={links}>
+                        <a className="link-nav" href={links}  onClick={onLinkClick}>
                             {links}
                         </a>
                     </li>

@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 import "../css/NavBar.css";
 function Intro() {
     const el = useRef(null);
-    const [open,setOpen]=useState("close");
+    const [open,setOpen]=useState(true);
 
     useEffect(() => {
         const typed = new Typed(el.current, {
@@ -30,12 +30,14 @@ function Intro() {
                 I am a very passionate software engineering student. I have great interest in frontend and backend development.
             </p>
             <button 
-                className={`hamburguer ${open === "close"? "":"open"}`}
-                onClick={() => open==="open"?setOpen("close"):setOpen("open")}
+                className={`hamburguer ${open? "":"open"}`}
+                onClick={() => open?setOpen(false):setOpen(true)}
             >
             </button>
             <NavBar
-                classNav={`navBar ${open === "close"? "":"open"}`}
+                classNav={`navBar ${open? "":"open"}`}
+                isOpen={open}
+                onLinkClick={() => open?setOpen(false):setOpen(true)}
             />
         </header>
      );
