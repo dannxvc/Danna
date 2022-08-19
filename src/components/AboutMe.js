@@ -12,12 +12,12 @@ import { useInView } from "framer-motion";
 
 function AboutMe() {
     const ref=useRef(null);
-    const isInView = useInView(ref, { once: true});
+    const isInView = useInView(ref, { once: false});
     const styleDes = {
-        transform: isInView ? "none" : "translateY(60px)",
+        transform: isInView ? "none" : "translateY(100px)",
         opacity: isInView ? 1 : 0,
-        transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s"
-    };
+        transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
+      };
     const technologiesItems ={
         htm5:{
             img:<TechHTML className="tech-icon"/>,

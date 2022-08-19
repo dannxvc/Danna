@@ -4,7 +4,7 @@ import { useInView } from "framer-motion";
 import "../css/Contact.css";
 function Contact() {
     const ref=useRef(null);
-    const isInView = useInView(ref, { once: true});
+    const isInView = useInView(ref, { once: false});
     const styleDes = {
         transform: isInView ? "none" : "translateY(100px)",
         opacity: isInView ? 1 : 0,

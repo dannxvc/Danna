@@ -57,6 +57,7 @@
         width: auto;
         justify-content: left;
         text-align: left;
+        backdrop-filter: blur(0);
     }
     .navBar ul{
         list-style: none;

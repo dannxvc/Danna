@@ -2,11 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
 function NavBar({classNav, onLinkClick}) {
     const ref=useRef(null);
-    const isInView = useInView(ref, { once: true});
+    const isInView = useInView(ref, { once: false});
     const style = {
         transform: isInView ? "none" : "translateY(100px)",
         opacity: isInView ? 1 : 0,
-        
         transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s"
       };
     const navItems = [

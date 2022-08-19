@@ -6,12 +6,12 @@ function ProjectCard({title,techs,description,img,linkGitRepo,linkLiveSite}) {
     const style = {
         transform: isInView ? "none" : "translateY(60px)",
         opacity: isInView ? 1 : 0,
-        transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s"
+        transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
       };
     const styleDes = {
         transform: isInView ? "none" : "translateY(100px)",
         opacity: isInView ? 1 : 0,
-        transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s"
       };
 
     return (  
