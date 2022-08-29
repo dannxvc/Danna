@@ -13,11 +13,6 @@ import { useInView } from "framer-motion";
 function AboutMe() {
     const ref=useRef(null);
     const isInView = useInView(ref, { once: false});
-    const styleDes = {
-        transform: isInView ? "none" : "translateY(100px)",
-        opacity: isInView ? 1 : 0,
-        transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
-      };
     const technologiesItems ={
         htm5:{
             img:<TechHTML className="tech-icon"/>,
@@ -50,23 +45,31 @@ function AboutMe() {
     };
     return ( 
         <Section id="about-me">
-            <h2>about me .</h2>
-            <p 
-                className="aboutme-description"
-            >I am a fourth year <strong>software development student</strong> at the technological university of Peru. I am also a self-taught person. I have great interest in <strong>frontend</strong> and <strong>backend</strong> development.</p>
-            <p 
-                className="aboutme-description"
-            > I am very interested in creating stuff, related to technology and art. I enjoy learning from platforms that help me improving my skills, like FreeCodeCamp, Academia X and TheOdinProject.
+            <h2>About me .</h2>
+            
+            <p className="aboutme-description">
+                I am a <strong>software engineering student</strong> at the 
+                technological university of Peru. I am also a self-taught person. 
+                Developing programs related to <strong>frontend</strong> and <strong>backend</strong> development is one of my greatest passions.
             </p>
-            <h3>Technologies I’ve been working with:</h3>
+            <p className="aboutme-description"> 
+                I am very passionate about creating things related to technology and art. 
+                I enjoy learning from platforms that help me improve my skills, such as FreeCodeCamp, Academia X, and TheOdinProject.
+            </p>
+
+            <h3>My skills:</h3>
             
             <ul>
-                {Object.keys(technologiesItems).map((tech)=>(
+                {Object.keys(technologiesItems).map((tech,i)=>(
                     <li 
                         className="tech-list" 
                         key={technologiesItems[tech]["tech"]}
                         ref={ref}
-                        style={styleDes}
+                        style={{
+                            transform: isInView ? "none" : "translateY(100px)",
+                            opacity: isInView ? 1 : 0,
+                            transition: `all .7s cubic-bezier(0.17, 0.55, 0.55, 1) ${i + 2}00ms`
+                          }}
                     >
                         {technologiesItems[tech]["img"]}
                         {technologiesItems[tech]["tech"]}

@@ -4,7 +4,7 @@ function Footer() {
     return ( 
         <footer className="footer">
             <p className="footer-attribution">
-                Designed and Built by Danna Vila.
+                Designed and built by Danna Vila.
             </p>
             <p className="footer-attribution">
                 All rights reserved. ©

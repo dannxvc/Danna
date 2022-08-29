@@ -28,7 +28,8 @@ function Intro() {
                 <h1 ref={el}></h1>
             </div>
             <p className="intro-description">
-                I am a very passionate software engineering student. I have great interest in frontend and backend development.
+                I am a very passionate software engineering student. 
+                I focus my skills on frontend and backend development.
             </p>
             <button 
                 className={`hamburguer ${open? "":"open"}`}

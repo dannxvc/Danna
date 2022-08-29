@@ -6,9 +6,9 @@ import {default as ProjectGoodsleep} from '../img/goodsleep.png';
 import {default as ProjectFCMotors} from '../img/fcmotors.png';
 function ProjectTab() {
 
-    const [projectactive,setProjectActive] = useState("personal");
+    const [projectactive,setProjectActive] = useState("Personal");
     const projectItems = {  
-        personal:[
+        Personal:[
             {
                 title:"Danna Portfolio",
                 techs:"HTML5 / CSS / REACT.JS",
@@ -34,7 +34,7 @@ function ProjectTab() {
                 linkLiveSite:"https://fc-motors-kal.netlify.app/"
             }
         ],
-        university: [
+        University: [
             {
                 title: "Good Sleep Hotel",
                 techs: "HTML5 / CSS / JAVASCRIPT / JAVA",
@@ -57,7 +57,7 @@ function ProjectTab() {
                 ))}
             </div>
             <div className="project-box">
-                {projectItems[projectactive].map((projectCha)=>(
+                {projectItems[projectactive].map((projectCha,i)=>(
                     <ProjectCard
                         key={projectCha.title}
                         title={projectCha.title}
@@ -66,7 +66,7 @@ function ProjectTab() {
                         img={projectCha.img}
                         linkGitRepo={projectCha.linkGitRepo}
                         linkLiveSite={projectCha.linkLiveSite}
-                        
+                        i={i}
                      />
             ))}
             </div>

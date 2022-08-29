@@ -12,7 +12,7 @@ function Contact() {
       };
     return ( 
         <Section id="contact">
-            <h2>contact .</h2>
+            <h2>Contact .</h2>
             <div className="contact-content">
                 <div  
                     ref={ref}

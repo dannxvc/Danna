@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { useInView } from "framer-motion";
 function NavBar({classNav, onLinkClick}) {
     const ref=useRef(null);
@@ -13,27 +13,23 @@ function NavBar({classNav, onLinkClick}) {
         "#about-me",
         "#my-projects",
         "#contact",
-    ];
-    const [isDesktop, setDesktop] = useState(window.innerWidth > 1120);
-    const updateMedia = () => {
-        setDesktop(window.innerWidth > 1450);
-      };
-    useEffect(() => {
-        window.addEventListener("resize", updateMedia);
-        return () => window.removeEventListener("resize", updateMedia);
-      });
-    
+    ];    
     return ( 
         <nav 
             className={classNav}
-           
         >
-            <ul  ref={ref}
-            style={style}   >
+            <ul>
                 {navItems.map((links,i)=>
-                 
-                    <li key={i}>
-                        <a className="link-nav" href={links} onClick={isDesktop?"":onLinkClick}>
+                    <li 
+                        key={i}   
+                        ref={ref}
+                        style={{
+                            transform: isInView ? "none" : "translateY(100px)",
+                            opacity: isInView ? 1 : 0,
+                            transition: `all .7s cubic-bezier(0.17, 0.55, 0.55, 1) ${i + 3}00ms`
+                        }}  
+                    >
+                        <a className="link-nav" href={links} onClick={onLinkClick}>
                             {links}
                         </a>
                     </li>

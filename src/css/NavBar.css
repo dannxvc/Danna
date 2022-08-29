@@ -23,7 +23,7 @@
 }
 .navBar ul{
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .navBar ul li{
    padding: 1rem;
@@ -36,39 +36,28 @@
     display: flex;
     gap: 0.5rem;
 }
+.nav-icons{
+    display: flex;
+    gap: 0.5rem;
+}
 .icon-nav{
     width: 2rem;
     height: 2rem;
     --icon:var(--green-strong);
 }
 .icon-nav:hover{
-    --icon:var(--secondary);
+    transform: translateY(-1rem);
 }
 @media only screen and (min-width:75rem) {
     .navBar{
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        bottom: 10rem;
-        right: 10rem;
-        top: auto;
         left: auto;
-        background:transparent;
-        width: auto;
-        justify-content: left;
-        text-align: left;
-        backdrop-filter: blur(0);
-    }
-    .navBar ul{
-        list-style: none;
-        font-size: 1.2rem;
-    }
-    .icon-nav{
-        width: 1.6rem;
-        height: 1.6rem;
-        margin: 0.5rem 0.5rem 0 0;
+        width: 15rem;
     }
     .navBar ul li{
-        padding: 0;
+        text-align: left;
+        padding: 1rem;
      }
+     .navBar ul{
+        font-size: 1.4rem;
+    }
 }
