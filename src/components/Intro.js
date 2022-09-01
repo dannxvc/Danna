@@ -25,7 +25,7 @@ function Intro() {
         <header className="header" id="intro">
             <p className="intro-greet">Hi! I'm</p> 
             <div className="title">
-                <h1 ref={el}>Danna Vila</h1>
+                <h1 ref={el}><span className="screen-readers-only">Danna Vila</span></h1>
             </div>
             <p className="intro-description">
                 I am a very passionate software engineering student. 

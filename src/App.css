@@ -41,6 +41,14 @@ h1{
   font-weight: 400;
   font-size: 4rem;
 }
+.screen-readers-only{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
 h2{
   color: transparent;
   -webkit-text-stroke: 0.1rem var(--secondary-light);
