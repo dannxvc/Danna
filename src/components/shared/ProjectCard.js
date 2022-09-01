@@ -20,9 +20,11 @@ function ProjectCard({title,techs,description,img,linkGitRepo,linkLiveSite,i}) {
               }}    
         >
             <h3
-            ref={ref}
-            style={styleDes}
-            >{title}</h3>
+                ref={ref}
+                style={styleDes}
+            >
+                {title}
+            </h3>
             <p 
                 className="project-techs"
                 ref={ref}

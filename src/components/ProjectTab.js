@@ -1,14 +1,23 @@
 import { useState } from "react";
 import ProjectCard from "./shared/ProjectCard";
-import {default as ProjectBookmark} from '../img/bookmark.png';
-import {default as ProjectPortfolio} from '../img/portfolio.png';
-import {default as ProjectGoodsleep} from '../img/goodsleep.png';
-import {default as ProjectFCMotors} from '../img/fcmotors.png';
+import {default as ProjectBookmark} from '../img/projects/bookmark.png';
+import {default as ProjectPortfolio} from '../img/projects/portfolio.png';
+import {default as ProjectGoodsleep} from '../img/projects/goodsleep.png';
+import {default as ProjectFCMotors} from '../img/projects/fcmotors.png';
+import {default as ProjectComments} from '../img/projects/comments_section.png';
 function ProjectTab() {
 
     const [projectactive,setProjectActive] = useState("Personal");
     const projectItems = {  
         Personal:[
+            {
+                title:"Interactive Comments Section",
+                techs:"HTML5 / CSS / REACT.JS",
+                description:"A comment section that allows the current user to interact with four functionalities (CRUD).",
+                img:<img className="project-img" src={ProjectComments} alt="Bookmark"/>,
+                linkGitRepo:"https://github.com/dannxvc/interactive-comments-section",
+                linkLiveSite:"https://interactive-comments-section-danna.pages.dev/"
+            },
             {
                 title:"Danna Portfolio",
                 techs:"HTML5 / CSS / REACT.JS",

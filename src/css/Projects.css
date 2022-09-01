@@ -30,8 +30,8 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    background: 
-    linear-gradient(150deg, var(--blue), rgba(0,0,0,0) 20%);
+    /* background: 
+    linear-gradient(150deg, var(--blue), rgba(0,0,0,0) 20%); */
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -40,6 +40,7 @@
     border: solid 0.05rem var(--secondary);
     padding: 13rem 2rem 3rem 2rem;
     transition: transform .5s ease;
+    background: rgba(106, 95, 167, 0.1);
 }
 .project-card:hover{
     border-radius: 4rem;
@@ -50,7 +51,9 @@
     left: auto;
     height: auto;
     width: auto;
-    opacity: 0.1;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    opacity: .3;
     z-index: -1;
 }
 .project-techs{
@@ -59,6 +62,7 @@
     margin-bottom: 1rem;
 }
 .project-description{
+    color: var(--white);
     font-size: 0.93rem;
 }
 .project-links{

@@ -11,6 +11,8 @@
   --blue:#282f99;
   --blue-transparent:rgba(40, 47, 153,.5);
   --icon:var(--secondary);
+  --white:#dbdef0;
+
 }
 html{
   box-sizing: border-box;
@@ -48,6 +50,7 @@ h2{
 }
 h3{
   margin-bottom: 1rem;
+  color: var(--white);
 }
 p{
   font-size: 1rem;
