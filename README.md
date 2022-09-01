@@ -5,7 +5,7 @@
 1. Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-![](/src/img/portfolio.png)
+![](/src/img/projects/portfolio_gif.gif)
 
 ## 👾 Set Up
 
@@ -36,6 +36,7 @@
 - CSS Grid
 - Mobile First WorkFlow
 - [React](https://reactjs.org/) - JS library
+- [Framer Motion](https://www.framer.com/) - Animation library
 
 ### 💻 Author
 

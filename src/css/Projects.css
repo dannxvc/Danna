@@ -55,6 +55,7 @@
     filter: blur(3px);
     opacity: .3;
     z-index: -1;
+    /* scale: 1; */
 }
 .project-techs{
     color: var(--green-strong);
@@ -76,13 +77,17 @@
     width: 2.1875rem;
     height: auto;
     margin: 0 auto;
-    transition: all .5s ease;
+    transition: all .3s ease;
 }
 .icon-project:hover{
     --icon:var(--green-strong);
 }
 .project-card:hover .icon-project{
     transform: scale(1.3);
+}
+.project-card:hover .project-img{
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
 }
 @media only screen and (min-width:55rem) {
     .project-box{
