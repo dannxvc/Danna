@@ -3,7 +3,7 @@ import ProjectCard from "./shared/ProjectCard";
 import {default as ProjectBookmark} from '../img/projects/bookmark.png';
 import {default as ProjectPortfolio} from '../img/projects/portfolio.png';
 import {default as ProjectGoodsleep} from '../img/projects/goodsleep.png';
-import {default as ProjectFCMotors} from '../img/projects/fcmotors.png';
+import {default as ProjectEcommerce} from '../img/projects/jewelry.png';
 import {default as ProjectComments} from '../img/projects/comments_section.png';
 function ProjectTab() {
 
@@ -12,7 +12,7 @@ function ProjectTab() {
         Personal:[
             {
                 title:"Interactive Comments Section",
-                techs:"HTML5 / CSS / REACT.JS",
+                techs:"HTML5 / CSS / REACT.JS ",
                 description:"A comment section that allows the current user to interact with four functionalities (CRUD).",
                 img:<img className="project-img" src={ProjectComments} alt="Bookmark"/>,
                 linkGitRepo:"https://github.com/dannxvc/interactive-comments-section",
@@ -35,18 +35,17 @@ function ProjectTab() {
                 linkLiveSite:"https://bookmark-pg-react.pages.dev/"
             },
             {
-                title:"Product Website",
-                techs:"HTML5 / CSS / JAVASCRIPT",
-                description:"A product website to highlight FC Motors Kal company's range of mechanical products.",
-                img:<img className="project-img" src={ProjectFCMotors} alt="FC Motors Kal Product Website"/>,
-                linkGitRepo:"https://github.com/dannxvc/interactive-products-filter",
-                linkLiveSite:"https://fc-motors-kal.netlify.app/"
+                title:"Jewelry Ecommerce Website",
+                techs:"REACTJS / TAILWINDCSS",
+                description:"An Ecommerce website which allows the user to interact and purcharse products.",
+                img:<img className="project-img" src={ProjectEcommerce} alt="FC Motors Kal Product Website"/>,
+                linkGitRepo:"https://github.com/dannxvc/ecommerce-jewelry",
             }
         ],
         University: [
             {
                 title: "Good Sleep Hotel",
-                techs: "HTML5 / CSS / JAVASCRIPT / JAVA",
+                techs: "BOOTSTRAP / JAVASCRIPT / JAVA",
                 description: "A hotel application, client and administration interfaces, reservation function.",
                 img:<img className="project-img" src={ProjectGoodsleep} alt="Bookmark"/>,
                 linkGitRepo:"https://github.com/dannxvc/goodsleepproyecto",

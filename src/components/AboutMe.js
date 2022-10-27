@@ -6,7 +6,7 @@ import {ReactComponent as TechREACT} from '../img/react.svg';
 import {ReactComponent as TechGIT} from '../img/git.svg';
 import {ReactComponent as TechSQL} from '../img/sql.svg';
 import {ReactComponent as TechJAVA} from '../img/java.svg';
-import "../css/AboutMe.css";
+import styles from "./AboutMe.module.css";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
@@ -15,31 +15,31 @@ function AboutMe() {
     const isInView = useInView(ref, { once: false});
     const technologiesItems ={
         htm5:{
-            img:<TechHTML className="tech-icon"/>,
+            img:<TechHTML className={styles.tech_icon}/>,
             tech:"HTML5"
         },
         css:{
-            img:<TechCSS className="tech-icon"/>,
+            img:<TechCSS className={styles.tech_icon}/>,
             tech: "CSS"
         },
         js:{
-            img:<TechJS className="tech-icon"/>,
+            img:<TechJS className={styles.tech_icon}/>,
             tech: "JavaScript ES6+"
         },
         react:{
-            img:<TechREACT className="tech-icon"/>,
+            img:<TechREACT className={styles.tech_icon}/>,
             tech: "React.js"
         },
         git:{
-            img:<TechGIT className="tech-icon"/>,
+            img:<TechGIT className={styles.tech_icon}/>,
             tech: "Git"
         },
         sql:{
-            img:<TechSQL className="tech-icon"/>,
+            img:<TechSQL className={styles.tech_icon}/>,
             tech: "SQL"
         },
         java:{
-            img:<TechJAVA className="tech-icon"/>,
+            img:<TechJAVA className={styles.tech_icon}/>,
             tech: "Java"
         }
     };
@@ -47,13 +47,13 @@ function AboutMe() {
         <Section id="about-me">
             <h2>About me .</h2>
             
-            <p className="aboutme-description">
+            <p className={styles.aboutme_description}>
                 I am a <strong>software engineering student</strong> at the 
                 technological university of Peru. I am also a self-taught person. 
-                Developing programs related to <strong>frontend</strong> and <strong>backend</strong> development is one of my greatest passions.
+                Developing programs related to <strong>frontend</strong> and backend development is one of my greatest passions.
             </p>
-            <p className="aboutme-description"> 
-                I am very passionate about creating things related to technology and art. 
+            <p className={styles.aboutme_description}> 
+                I am very passionate about designing & creating things related to technology and art. 
                 I enjoy learning from platforms that help me improve my skills, such as FreeCodeCamp, Academia X, and TheOdinProject.
             </p>
 
@@ -62,7 +62,7 @@ function AboutMe() {
             <ul>
                 {Object.keys(technologiesItems).map((tech,i)=>(
                     <li 
-                        className="tech-list" 
+                        className={styles.tech_list}
                         key={technologiesItems[tech]["tech"]}
                         ref={ref}
                         style={{

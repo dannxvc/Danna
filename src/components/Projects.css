@@ -30,8 +30,6 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    /* background: 
-    linear-gradient(150deg, var(--blue), rgba(0,0,0,0) 20%); */
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -51,11 +49,8 @@
     left: auto;
     height: auto;
     width: auto;
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
-    opacity: .3;
+    opacity: .2;
     z-index: -1;
-    /* scale: 1; */
 }
 .project-techs{
     color: var(--green-strong);
@@ -86,8 +81,7 @@
     transform: scale(1.3);
 }
 .project-card:hover .project-img{
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
+   scale: 1.3;
 }
 @media only screen and (min-width:55rem) {
     .project-box{

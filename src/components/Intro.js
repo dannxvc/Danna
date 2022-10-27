@@ -1,8 +1,8 @@
 import Typed from "typed.js";
 import { useState, useEffect, useRef  } from "react";
-import "../css/Intro.css";
+import "./Intro.css";
 import NavBar from "./NavBar";
-import "../css/NavBar.css";
+import "./NavBar.css";
 
 function Intro() {
     const el = useRef(null);
@@ -25,8 +25,8 @@ function Intro() {
         <header className="header" id="intro">
             <p className="intro-greet">Hi! I'm</p> 
             <div className="title">
-                <h1 ref={el}></h1>
                 <h1 className="screen-readers-only">Danna Vila</h1>
+                <h1 ref={el}></h1>
             </div>
             <p className="intro-description">
                 I am a very passionate software engineering student. 

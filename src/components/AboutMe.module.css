@@ -1,4 +1,4 @@
-.aboutme-description{
+.aboutme_description{
     width: 100%;
     max-width: 40rem;
     margin-bottom: 3rem;
@@ -6,12 +6,12 @@
 strong{
     color: var(--green-strong);
 }
-.tech-icon{
+.tech_icon{
     width: 1rem;
     height: auto;
     margin-right: 1rem;
 }
-.tech-list{
+.tech_list{
     display: flex;
     flex-direction: row;
     align-items: center;

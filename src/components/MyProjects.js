@@ -1,6 +1,6 @@
 import ProjectTab from "./ProjectTab";
 import Section from "./shared/Section";
-import "../css/Projects.css";
+import "./Projects.css";
 function MyProjects() {
     return (  
         <Section  id="my-projects">

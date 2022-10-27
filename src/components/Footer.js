@@ -1,9 +1,9 @@
-import "../css/Footer.css";
+import styles from "./Footer.module.css";
 
 function Footer() {
     return ( 
-        <footer className="footer">
-            <p className="footer-attribution">
+        <footer className={styles.footer}>
+            <p className={styles.footer_attribution}>
                 ©2022 Danna Vila
             </p>
         </footer>

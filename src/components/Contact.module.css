@@ -1,12 +1,11 @@
-.contact-content{
+.contact_content{
     display: flex;
     flex-direction: column;
-    /* background-color: var(--primary-light); */
     border: 0.1rem solid var(--secondary);
     border-radius: 1rem;
     padding: 2rem;
 }
-.contact-icons{
+.contact_icons{
     display: grid;
     gap: 1rem;
     width: 100%;
@@ -14,7 +13,7 @@
     text-align: center;
     grid-auto-flow:column;
 }
-.icon-contact{
+.icon_contact{
     width: 2rem;
     height: auto;
     margin: 1rem auto 0 auto;
@@ -40,16 +39,16 @@
       }
 }
 @media only screen and (min-width:30rem) {
-    .contact-content{
+    .contact_content{
         flex-direction: row;
         align-items: center; 
         padding: 5rem;       
     }
-    .contact-icons{
+    .contact_icons{
         width: 60%;
         grid-auto-flow:row;
     }
-    .icon-contact{
+    .icon_contact{
         width: 3.125rem;
     }
 }
